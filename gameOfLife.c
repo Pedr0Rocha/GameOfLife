@@ -107,8 +107,8 @@ void buildGliderGun(int board[N][N]) {
 void initBoard(int board[N][N]) {
 	for (int i = 0; i < N; i++)
 		for (int j = 0; j < N; j++)
-			//board[i][j] = rand() % 2;
-			board[i][j] = 0;
+			board[i][j] = rand() % 2;
+			//board[i][j] = 0;
 }
 
 int main() {
@@ -122,7 +122,7 @@ int main() {
 	initBoard(boardModifications);
 
 	//buildGlider(board);
-	buildGliderGun(board);
+	//buildGliderGun(board);
 	int gameLoop = 0;
 	while (gameLoop++ < 1000) {
 		printf("Game of Life - Cicle %d\n", gameLoop);
